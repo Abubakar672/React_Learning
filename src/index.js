@@ -20,13 +20,23 @@ let message = "Hi There";
 let name = "AbuBakar";
 let age = "25";
 
+//making prop value here 
+
+
+const type = "number";
+const minValue = 2;
+const style = {border: '3px solid red'}
+
 if(Math.random() > 0.5){
     message = "Number is greater than 0.5";
 }else{
     message = "Number is lesser than 0.5";
 }
-//Returning more than one name into a JSX element 
- return ( <h1>{name}{age}{message}</h1> )// this curly brackets with the message in h1 tells to find this variable and stick with it 
+/** if you are returning a prop value directly so string is alwasy passed in double qoutes "" 
+& the number should be passsed in {} curly brackets 
+ */
+
+ return (<input type={type} min={minValue} style={style} /> )
 }
 
 // Step 5 => Show Component on the screen
